@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root{
+
+    /* colors */
+     --dark-cyan: hsl(158, 36%, 37%);
+     --cream: hsl(30, 38%, 92%);
+     --very-dark-blue: hsl(212, 21%, 14%);
+     --dark-grayish-blue: hsl(228, 12%, 48%);
+     --white: hsl(0, 0%, 100%);
+
+
+    /* Typography */
+    --para: 14px;
+
+     /* Font */
+     --font-montserrat: 'Montserrat', san-serif;
+     --font-fraunces: 'Fraunces', san-serif;
+     --font-medium: 500;
+     --font-bold: 700;
+}
+
+body{
+    background-color: var(--cream);
+}
+
+.container {
+    position: relative;
+    border-radius: 3%;
+    background-color: #fff;
+    margin: 30px 10px 10px 10px;
+}
+
+.hero__img{
+    width:100%;
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+}
+
+.container__content{
+    padding: 0 30px 25px 30px;
+}
+
+.text__one{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: var(--font-montserrat);
+    color: var(--dark-grayish-blue);
+    font-weight: var(--font-medium);
+    font-size: .70rem;
+    margin-bottom: 5px;
+}
+
+.text__header{
+    margin-top: 8px;
+    font-family: var(--font-fraunces);
+    font-size: 1.9rem;
+}
+
+.text__para {
+    font-family: var(--font-montserrat);
+    font-size: .82rem;
+    line-height: 23px;
+    color: var(--dark-grayish-blue);
+}
+
+.content__price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.1rem;
+}
+
+.text__discount{
+    font-size: 1.9rem;
+    justify-content: start;
+    margin-right: 1.2rem;
+    font-family: var(--font-fraunces);
+    color: var(--dark-cyan);
+}
+
+.text__original{
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+    font-family: var(--font-montserrat);
+    font-size: .84rem;
+}
+
+.content__button{
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    width: 100%;
+    border: 1px solid var(--dark-cyan);
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 15px 0;
+    border-radius: 8px;
+    font-family: var(--font-montserrat);
+    font-weight: var(--font-bold);
+}
+
+.content__button > .svg {
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        width: 29rem;
+        display: flex;
+        margin-top: 18vh;
+    }
+    .container__img{
+        width: 28rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        background-image: url('/images/image-product-desktop.jpg');
+        background-size: cover; 
+        background-position: center;     
+    }
+    .hero__img{
+        display: none;
+    }
+
+    .container__content{
+        width: 19rem;
+        padding-top: .5rem;
+    }
+
+    .text__one{
+        font-size: .65rem;
+    }
+
+    .text__header{
+        margin-top: .8rem;
+        font-size: 1.67rem;
+    }
+    .text__para{
+        font-size: .73rem;
+    }
+
+    .text__discount{
+        font-size: 1.46rem;
+    }
+
+    .text__original{
+        font-size: .7rem;
+    }
+
+    .content__button{
+        padding: 10px 15px;
+        font-size: .7rem;
+    }
+}
