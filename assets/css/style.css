@@ -120,7 +120,7 @@ body{
         border-top-right-radius: 0;
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
-        background-image: url('/images/image-product-desktop.jpg');
+        background-image: url('https://mkandan1.github.io/product-preview-card/images/image-product-desktop.jpg');
         background-size: cover; 
         background-position: center;     
     }
